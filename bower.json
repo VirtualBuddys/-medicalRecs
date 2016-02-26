@@ -1,0 +1,28 @@
+{
+  "name": "trackr",
+  "description": "a medical records application",
+  "main": "app.js",
+  "authors": [
+    "Elizabeth Banalagay"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "medical"
+  ],
+  "homepage": "https://github.com/VirtualBuddys/-medicalRecs",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "client/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-ui-router": "~0.2.18",
+    "underscore": "~1.8.3",
+    "font-awesome": "~4.5.0"
+  }
+}
