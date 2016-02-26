@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en' ng-app='app'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Trackr</title>
+    <link rel='stylesheet' type='text/css' href='styles/styles.css'>
+    <link rel='stylesheet' type='text/css' href='bower_components/font-awesome/css/font-awesome.min.css'>
+  </head>
+  <body>
+    <div ui-view><div>
+
+    <!-- bower components -->
+    <script src='bower_components/angular/angular.min.js'></script>
+    <script src='bower_components/angular-ui-router/release/angular-ui-router'></script>
+    <script src='bower_components/underscore/underscore.js'></script>
+
+    <!-- main config -->
+    <script src='src/app.js'></script>
+
+    <!-- controllers -->
+    <script src='src/components/billing/billingCtrl.js'></script>
+    <script src='src/components/home/homeCtrl.js'></script>
+    <script src='src/components/insurance/insuranceCtrl.js'></script>
+    <script src='src/components/patientInfo/patientInfoCtrl.js'></script>
+
+    <!-- shared services -->
+    <script src='src/shared/services/patientFactory.js'></script>
+    <script src='src/shared/services/staffFactory.js'></script>
+
+    <!-- component services -->
+    <script src='src/components/billing/billingModel.js'></script>
+    <script src='src/components/home/homeModel.js'></script>
+    <script src='src/components/insurance/insuranceModel.js'></script>
+    <script src='src/components/patientInfo/patientInfoModel.js'></script>
+
+    <!-- custom directives -->
+    <script src='src/shared/navbar/navbarDirective.js'></script>
+
+  </body>
+</html>
