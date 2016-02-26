@@ -4,6 +4,7 @@
   "description": "a medical records application",
   "main": "app.js",
   "scripts": {
+    "start": "node server/server.js",
     "postinstall": "bower install"
   },
   "repository": {
