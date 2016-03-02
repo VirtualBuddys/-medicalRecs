@@ -8,10 +8,13 @@ module.exports = function(app, express) {
 
   var patientRoute = express.Router();
   var staffRoute = express.Router();
+  var recordRoute = express.Router();
 
   app.use('/api/patient', patientRoute);
   app.use('/api/staff', staffRoute);
+  app.use('/api/record', recordRoute);
 
   require('./../patient/patientRouter.js')(patientRoute);
   require('./../staff/staffRouter.js')(staffRoute);
+  require('./../record/recordRouter.js')(recordRoute);
 };
