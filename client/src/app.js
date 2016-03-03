@@ -15,38 +15,56 @@ angular.module('app', [
   $stateProvider
     .state('home', {
       templateUrl: 'src/components/home/homeView.html',
-      url: '/'
+      url: '/',
+      controller: 'homeCtrl',
+      controllerAs: 'hc'
     })
     .state('billingProfile', {
       templateUrl: 'src/components/billingProfile/billingProfileView.html',
-      url: '/billing/:id'
+      url: '/billing/:id',
+      controller: 'billingProfileCtrl',
+      controllerAs: 'bpc'
     })
     .state('insuranceProfile', {
       templateUrl: 'src/components/insuranceProfile/insuranceProfileView.html',
-      url: '/insurance/:id'
+      url: '/insurance/:id',
+      controller: 'insuranceProfileCtrl',
+      controllerAs: 'ipc'
     })
     .state('newBilling', {
       templateUrl: 'src/components/newBilling/newBillingView.html',
-      url: '/newbilling'
+      url: '/newbilling',
+      controller: 'newBillingCtrl',
+      controllerAs: 'nbc'
     })
     .state('newInsurance', {
       templateUrl: 'src/components/newInsurance/newInsuranceView.html',
-      url: '/newinsurance'
+      url: '/newinsurance',
+      controller: 'newInsuranceCtrl',
+      controllerAs: 'nic'
     })
     .state('newPatient', {
       templateUrl: 'src/components/newPatient/newPatientView.html',
-      url: '/newpatient'
+      url: '/newpatient',
+      controller: 'newPatientCtrl',
+      controllerAs: 'npc'
     })
     .state('patientProfile', {
       templateUrl: 'src/components/patientProfile/patientProfileView.html',
-      url: 'patient/:id'
+      url: 'patient/:id',
+      controller: 'patientProfileCtrl',
+      controllerAs: 'ppc'
     })
     .state('patientSearch', {
       templateUrl: 'src/components/patientSearch/patientSearchView.html',
-      url: '/search'
+      url: '/search',
+      controller: 'patientSearchCtrl',
+      controllerAs: 'psc'
     })
     .state('recordProfile', {
       templateUrl: 'src/components/recordProfile/recordProfileView.html',
-      url: '/record/:id'
+      url: '/record/:id',
+      controller: 'recordProfileCtrl',
+      controllerAs: 'rpc'
     })
 }])
