@@ -26,8 +26,17 @@
     "body-parser": "^1.15.0",
     "bower": "^1.7.7",
     "express": "^4.13.4",
+    "gulp": "^3.9.1",
+    "gulp-karma": "0.0.5",
+    "jasmine": "^2.4.1",
+    "jasmine-core": "^2.4.1",
     "karma": "^0.13.21",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-cli": "^0.1.2",
+    "karma-jasmine": "^0.3.7",
+    "karma-nested-reporter": "^0.1.4",
     "morgan": "^1.7.0",
+    "shell": "^0.3.2",
     "underscore": "^1.8.3"
   }
 }
