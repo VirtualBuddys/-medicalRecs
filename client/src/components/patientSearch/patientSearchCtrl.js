@@ -1,4 +1,4 @@
 angular.module('app.patientSearch', [])
-  .controller('patientSearch', [ function(){
+  .controller('patientSearchCtrl', [ function(){
 
   }]);
