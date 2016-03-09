@@ -10,8 +10,8 @@ angular.module('app', [
   'app.patientSearch',
   'app.recordProfile'
 ])
-.config(['$stateProvider', '$urlProvider, $httpProvider', function($stateProvider, $urlProvider, $httpProvider){
-  $urlProvider.otherwise('/');
+.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', function($stateProvider, $urlRouterProvider, $httpProvider){
+  $urlRouterProvider.otherwise('/');
   $stateProvider
     .state('home', {
       templateUrl: 'src/components/home/homeView.html',
