@@ -1,4 +1,4 @@
-angular.module('app', [])
+angular.module('app.newInsurance', [])
   .controller('newInsurance', [ function(){
 
   }]);
