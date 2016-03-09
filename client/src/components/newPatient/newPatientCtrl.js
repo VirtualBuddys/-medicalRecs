@@ -1,4 +1,4 @@
-angular.module('app.newPatient')
+angular.module('app.newPatient', [])
   .controller('newPatientCtrl', [ function(){
 
   }]);
