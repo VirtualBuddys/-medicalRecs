@@ -6,7 +6,7 @@ angular.module('app', [
   'app.newBilling',
   'app.newInsurance',
   'app.newPatient',
-  'app.patientInfo',
+  'app.patientProfile',
   'app.patientSearch',
   'app.recordProfile'
 ])
