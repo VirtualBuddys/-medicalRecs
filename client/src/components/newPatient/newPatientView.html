@@ -3,20 +3,20 @@
     <h1>New Patient Profile</h1>
     <!--TODO: Img Upload-->
 
-    <form>
+    <form ng-submit='npc.createPatient()'>
         <div>
             <h4>Patient Information</h4>
             <div>
                 <label>Name: </label>
-                <select>
+                <select ng-model='npc.data.prefix'>
                     <option value='' diabled selected>Prefix</option>
                     <option>Mr.</option>
                     <option>Ms.</option>
                     <option>Mrs.</option>
                 </select>
-                <input type='text' name='firstName' placeholder='First Name'>
-                <input type='text' name='middleInitial' placeholder='Middle Initial'>
-                <input type='text' name='lastName' placeholder='Last Name'>
+                <input type='text' name='firstName' placeholder='First Name' ng-model='npc.data.firstName'>
+                <input type='text' name='middleInitial' placeholder='Middle Initial' ng-model='npc.data.middleInitial'>
+                <input type='text' name='lastName' placeholder='Last Name' ng-model='npc.data.lastName'>
             </div>
 
             <div>
@@ -24,7 +24,7 @@
                 <!--TODO: ng-repeat Months, days and years so you dont have to write them all out-->
 
                 <label>Sex: </label>
-                <select>
+                <select ng-model='npc.data.sex'>
                     <option value='' disabled selected>--</option>
                     <option>Male</option>
                     <option>Female</option>
@@ -33,7 +33,7 @@
 
             <div>
                 <label>SSN: </label>
-                <input type='text' name='ssn' placeholder='XXX-XX-XXXX'>
+                <input type='text' name='ssn' placeholder='XXX-XX-XXXX' ng-model='npc.data.ssn'>
             </div>
         </div>
 
@@ -42,22 +42,21 @@
             <h4>Contact Information</h4>
             <div>
                 <label>Address:</label>
-                <input type='text' name='address1' placeholder='Address Line 1'>
-                <input type='text' name='address2' placeholder='Address Line 2'>
-                <input type='text' name='city' placeholder='City'>
+                <input type='text' name='address1' placeholder='Address Line 1' ng-model='npc.data.address1'>
+                <input type='text' name='city' placeholder='City' ng-model='npc.data.city'>
                 <!--TODO ng-repeat the states-->
-                <input type='text' name='state' placeholder='State'>
-                <input type='text' name='zipCode' placeholder='Zip Code'>
+                <input type='text' name='state' placeholder='State' ng-model='npc.data.stateUsa'>
+                <input type='text' name='zipCode' placeholder='Zip Code' ng-model='npc.data.zipCode'>
             </div>
 
             <div>
                 <label>Phone Number: </label>
                 <!--TODO make sure phone number is formatted to (XXX)XXX-XXXX-->
-                <input type='text' name='homeNumber' placeHolder='Home (XXX)XXX-XXXX'>
-                <input type='text' name='cellNumber' placeholder='Mobile (XXX)XXX-XXXX'>
-                <input type='text' name='workNumber' placeholder='Work (XXX)XXX-XXXX'>
+                <input type='text' name='homeNumber' placeHolder='Home (XXX)XXX-XXXX' ng-model='npc.data.homeNumber'>
+                <input type='text' name='cellNumber' placeholder='Mobile (XXX)XXX-XXXX' ng-model='npc.data.cellNumber'>
+                <input type='text' name='workNumber' placeholder='Work (XXX)XXX-XXXX' ng-model='npc.data.workNumber'>
                 <label> Primary Number: </label>
-                <select>
+                <select ng-model='npc.data.primaryNumber'>
                     <option>Home</option>
                     <option>Mobile</option>
                     <option>Work</option>
@@ -66,7 +65,7 @@
 
             <div>
                 <label>Email: </label>
-                <input type='text' name='email' placeholder='Email Address'>
+                <input type='text' name='email' placeholder='Email Address' ng-model='npc.data.email'>
             </div>
         </div>
 
@@ -74,26 +73,26 @@
             <h4>Next of Kin Information</h4>
             <div>
                 <label>Name: </label>
-                <select>
+                <select ng-model='npc.data.prefixKin'>
                     <option value='' diabled selected>Prefix</option>
                     <option>Mr.</option>
                     <option>Ms.</option>
                     <option>Mrs.</option>
                 </select>
-                <input type='text' name='firstNameKin' placeholder='First Name'>
-                <input type='text' name='middleInitialKin' placeholder='Middle Initial'>
-                <input type='text' name='lastNameKin' placeholder='Last Name'>
+                <input type='text' name='firstNameKin' placeholder='First Name' ng-model='npc.data.firstNameKin'>
+                <input type='text' name='middleInitialKin' placeholder='Middle Initial' ng-model='npc.data.middleInitialKin'>
+                <input type='text' name='lastNameKin' placeholder='Last Name' ng-model='npc.data.lastNameKin'>
             </div>
 
             <div>
                 <label>Relationship to Patient:</label>
-                <input type='text' name='relation' placeholder='Relationship'>
+                <input type='text' name='relation' placeholder='Relationship' ng-model='npc.data.relation'>
             </div>
 
             <div>
                 <label>Phone Number: </label>
                 <!--TODO make sure phone number is formatted to (XXX)XXX-XXXX-->
-                <input type='text' name='numberKin' placeHolder='Home (XXX)XXX-XXXX'>
+                <input type='text' name='numberKin' placeHolder='Home (XXX)XXX-XXXX' ng-model='npc.data.numberKin'>
             </div>
         </div>
 
