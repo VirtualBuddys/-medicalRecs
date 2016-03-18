@@ -1,11 +1,13 @@
+//TODO debug why this test wont run
+
 module.exports = function(config){
   config.set({
     basePath: '',
     frameworks: ['jasmine'],
     files: [
       //angular source files
-      'client/bower_components/angular/angular.min.js',
-      'client/bower_components/angular-ui-router/release/angular-ui-router',
+      'client/bower_components/angular/angular.js',
+      'client/bower_components/angular-ui-router/release/angular-ui-router.js',
       'client/bower_components/underscore/underscore.js',
       'client/bower_components/angular-mocks/angular-mocks.js',
 

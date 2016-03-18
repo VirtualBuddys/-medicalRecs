@@ -1,10 +1,12 @@
+//TODO debug why this test wont run
+
 var gulp = require('gulp');
-//var nodemon =require('gulp-nodemon');
+var nodemon =require('gulp-nodemon');
 //var karma = require('gulp-karma');
 //var bs = require('browser-sync');
 //var reload = bs.reload;
-//var when = require('gulp-if');
-//var shell = require('gulp-shell');
+var when = require('gulp-if');
+var shell = require('gulp-shell');
 //var concat = require('gulp-concat');
 //var rename = require('gulp-rename');
 //var uglify = require('gulp-uglify');
@@ -38,4 +40,10 @@ gulp.task('tdd', function(done){
   new Server({
     configFile: __dirname + '/karma.conf.js'
   }, done).start();
+})
+
+gulp.task('serve', function() {
+  nodemon({script: './server/server.js', ignore: 'node_modules/**/*.js'});
 });
+
+gulp.task('default', ['start']);
